@@ -3,19 +3,32 @@ body {
   font-family: 'Open Sans', Helvetica, Roboto, Arial, sans-serif;
   color: $text;
   margin: 0;
-  padding: 0;
+  padding-bottom: 50px;
+  padding-left: 175px;
+  padding-right: 175px;
+  margin-top: -50px;
 }
 
 h1 {
-
+font-size: 90px;
+color: $text2;
+margin-bottom: 100px;
 }
 
 h2 {
+font-size: 35px;
+margin-top: -50px;
+margin-right: 75px;
+}
 
+h3 {
+  font-size: 35px;
+  margin-right: 75px;
 }
 
 p {
-  color: $text;
+  color: $text3;
+  margin-right: 75px;
 }
 
 a {

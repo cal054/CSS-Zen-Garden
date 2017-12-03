@@ -2,10 +2,12 @@
 THIS IS BETTER THAN DEFAULT, YOU SHOULD ALWAYS USE THIS:
 */
 html {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 *, *:before, *:after {
-  box-sizing: inherit; }
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
 
 /* END BOX MODEL SETTINGS */
 .clearfix {
@@ -17,7 +19,7 @@ html {
   .clearfix:after {
     clear: both; }
 
-@keyframes fadeOut {
+@-webkit-keyframes fadeOut {
   0% {
     opacity: 1;
     visibility: visible; }
@@ -25,6 +27,20 @@ html {
     opacity: 0;
     visibility: hidden; } }
 
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible; }
+  100% {
+    opacity: 0;
+    visibility: hidden; } }
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden; }
+  100% {
+    opacity: 1;
+    visibility: visible; } }
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -32,33 +48,53 @@ html {
   100% {
     opacity: 1;
     visibility: visible; } }
-
 body {
   font-size: 16px;
   font-family: 'Open Sans', Helvetica, Roboto, Arial, sans-serif;
-  color: #343741;
+  color: #333333;
   margin: 0;
-  padding: 0; }
+  padding-bottom: 50px;
+  padding-left: 175px;
+  padding-right: 175px;
+  margin-top: -50px; }
+
+h1 {
+  font-size: 90px;
+  color: #009966;
+  margin-bottom: 100px; }
+
+h2 {
+  font-size: 35px;
+  margin-top: -50px;
+  margin-right: 75px; }
+
+h3 {
+  font-size: 35px;
+  margin-right: 75px; }
 
 p {
-  color: #343741; }
+  color: #999999;
+  margin-right: 75px; }
 
 a {
-  color: #b7006a;
+  color: #66cc99;
+  -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease; }
   a:hover {
-    color: #980058; }
+    color: #4fc48a; }
 
 button, a.button {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: none;
   display: block;
-  background-color: #b7006a;
+  background-color: #66cc99;
   color: white;
   text-align: center;
   cursor: pointer;
+  -webkit-transition: background-color 0.5s ease;
   transition: background-color 0.5s ease;
   line-height: 1.2em;
   max-width: 300px; }
   button:hover, a.button:hover {
-    background-color: #980058; }
+    background-color: #4fc48a; }
